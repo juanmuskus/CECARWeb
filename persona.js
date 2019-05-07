@@ -10,7 +10,8 @@ var per={
     {
         var ano= new Date(this.fecha);
         var ano_actual=new Date();
-         if ((ano_actual.getFullYear()-ano)<18)
+        var diferencia=ano_actual.getFullYear()-ano.getFullYear();
+         if (diferencia>18)
            var texto='Mayor de edad';
            else
             texto='No es mayor de edad';
